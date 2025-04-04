@@ -136,27 +136,79 @@ body {
 
 :root {
   font-size: 14px;
---location-clr: hsl(75, 94%, 57%);
---actv-clr: hsl(75, 94%, 57%);  
---main-txt-clr hsl(0, 0%, 100%);
---user-description-clr: hsl(0, 0%, 20%);
---card-clr: hsl(0, 0%, 12%);
---bg-clr: hsl(0, 0%, 8%);
---fnt400: 400;
---fnt600: 600;
---fnt700: 700;
+  --location-clr: hsl(75, 94%, 57%);
+  --actv-clr: hsl(75, 94%, 57%);
+  --main-txt-clr: hsl(0, 0%, 100%);
+  --btn-bg: hsl(0, 0%, 20%);
+  --card-clr: hsl(0, 0%, 12%);
+  --bg-clr: hsl(0, 0%, 8%);
+  --fnt400: 400;
+  --fnt600: 600;
+  --fnt700: 700;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 769px) {
   /* CHANGES SETTINGS AT 375px SCREEN SIZE TO 769px SCREEN SIZE*/
+  body {
+    background-color: var(--bg-clr);
+    width: 100%;
+    height: 100vh;
+  }
+
+  .card {
+    background-color: var(--card-clr);
+    width: 80%;
+    padding: 2rem;
+    margin: 5rem auto;
+    border-radius: 0.9rem;
+  }
+
+  .wrapper img {
+    border-radius: 50%;
+    width: 7rem;
+    margin: 1rem auto;
+  }
+
+  .name {
+    color: var(--main-txt-clr);
+    font-weight: var(--fnt600);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .location {
+    color: var(--location-clr);
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .user-bio {
+    color: var(--main-txt-clr);
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  li {
+    margin: 2rem;
+    width: 95%;
+  }
+  .btn {
+    color: var(--main-txt-clr);
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--btn-bg);
+    padding: 1rem;
+    margin: 2rem auto;
+    cursor: pointer;
+    font-weight: var(--fnt700);
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
   /* CHANGES SETTINGS AT 768px SCREEN SIZE TO 1440px SCREEN SIZE*/
-
-  body {
-    /* background-color: var(--bg-clr); */
-  }
 }
 
 .attribution {
