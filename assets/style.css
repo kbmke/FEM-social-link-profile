@@ -67,78 +67,8 @@ body {
   --fnt600: 600;
   --fnt700: 700;
 }
-
-@media only screen and (min-width: 744px) and (max-width: 1440px) {
-  /* CHANGES SETTINGS AT 744px SCREEN SIZE TO 1440px SCREEN SIZE */
-  body {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--bg-clr);
-  }
-  .card {
-    width: 40%;
-    background-color: var(--card-clr);
-    margin: 6rem auto;
-    padding: 2.5rem;
-    text-align: center;
-    border-radius: 0.7rem;
-  }
-  .wrapper img {
-    width: 9rem;
-    border-radius: 50%;
-    margin: 0 auto;
-  }
-  .name {
-    text-align: center;
-    color: var(--main-txt-clr);
-    font-size: 3rem;
-    margin: 1rem auto;
-    font-weight: 700;
-  }
-  .location {
-    color: var(--location-clr);
-    text-align: center;
-    font-size: 1.7rem;
-    margin: 1.5rem auto;
-    font-weight: 600;
-  }
-  .user-bio {
-    color: var(--main-txt-clr);
-    text-align: center;
-    font-size: 1rem;
-    margin: 3rem auto;
-  }
-  li {
-    text-decoration: none;
-    margin: 1rem auto;
-    padding: 2rem;
-    border-radius: 0.7rem;
-    background-color: var(--btn-bg);
-    /* font-weight: 600; */
-  }
-
-  .btn {
-    color: var(--main-txt-clr);
-    /* background-color: var(--btn-bg); */
-    font-weight: 600;
-    text-align: center;
-    font: 1rem;
-    margin: 1rem auto;
-    text-decoration: none;
-  }
-
-  .attribution {
-    color: var(--main-txt-clr);
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
-}
-
-@media only screen and (min-width: 375px) and (max-width: 743px) {
-  /* CHANGES SETTINGS AT 375px SCREEN SIZE TO 743px SCREEN SIZE*/
+@media only screen and (min-width: 335px) and (max-width: 549px) {
+  /* CHANGES SETTINGS AT 335px SCREEN SIZE TO 743px SCREEN SIZE*/
 
   body {
     background-color: var(--bg-clr);
@@ -203,6 +133,74 @@ body {
     color: var(--main-txt-clr);
     /* background-color: var(--btn-bg); */
     text-align: center;
+    margin: 1rem auto;
+    text-decoration: none;
+  }
+
+  .attribution {
+    color: var(--main-txt-clr);
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 1440px) {
+  /* CHANGES SETTINGS AT 550px SCREEN SIZE TO 1440px SCREEN SIZE */
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-clr);
+  }
+  .card {
+    width: 70%;
+    background-color: var(--card-clr);
+    margin: 6rem auto;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 0.7rem;
+  }
+  .wrapper img {
+    width: 9rem;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .name {
+    text-align: center;
+    color: var(--main-txt-clr);
+    font-size: 3rem;
+    margin: 1rem auto;
+    font-weight: 700;
+  }
+  .location {
+    color: var(--location-clr);
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 1.5rem auto;
+    font-weight: 600;
+  }
+  .user-bio {
+    color: var(--main-txt-clr);
+    text-align: center;
+    font-size: 1rem;
+    margin: 3rem auto;
+  }
+  li {
+    text-decoration: none;
+    margin: 1rem auto;
+    padding: 2rem;
+    border-radius: 0.7rem;
+    background-color: var(--btn-bg);
+    /* font-weight: 600; */
+  }
+
+  .btn {
+    color: var(--main-txt-clr);
+    /* background-color: var(--btn-bg); */
+    font-weight: 600;
+    text-align: center;
+    font: 1rem;
     margin: 1rem auto;
     text-decoration: none;
   }
